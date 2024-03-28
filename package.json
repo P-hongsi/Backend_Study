@@ -9,14 +9,14 @@
   "scripts": {
     "dev": "nodemon ./src/bin/www.js"
   },
-  "name": "2",
+  "name": "login_lecture",
   "version": "1.0.0",
   "main": "app.js",
   "bin": {
-    "2": "bin/www.js"
+    "login_lecture": "src/bin/www.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "백엔드 맛보기"
 }

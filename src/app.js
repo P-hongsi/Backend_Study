@@ -11,7 +11,7 @@ const PORT = 3000;
 const home = require('./routes/home');
 
 //! 앱세팅
-app.set('views', './views');
+app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 app.use('/', home);
