@@ -7,7 +7,7 @@
     "nodemon": "^3.1.0"
   },
   "scripts": {
-    "dev": "nodemon ./bin/www.js"
+    "dev": "nodemon ./src/bin/www.js"
   },
   "name": "2",
   "version": "1.0.0",
