@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "nodemon ./src/bin/www.js",
-    "start": "node ./src/bin/www.js"
+    "start": "npm start",
+    "build": "npm run build"
   },
   "name": "login_lecture",
   "version": "1.0.0",
