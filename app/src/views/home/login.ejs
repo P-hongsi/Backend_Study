@@ -19,6 +19,61 @@
       body {
         background-color: #080710;
       }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #080710;
+        }
+        .shape:first-child {
+          background: linear-gradient(#1845ad, #23a2f6);
+        }
+        .shape:last-child {
+          background: linear-gradient(to right, #ff2f2f, #f09819);
+        }
+        form * {
+          color: #ffffff;
+        }
+        button {
+          background-color: #ffffff;
+          color: #080710;
+        }
+        form {
+          background-color: rgba(255, 255, 255, 0.13);
+        }
+        input {
+          background-color: rgba(255, 255, 255, 0.07);
+        }
+        ::placeholder {
+          color: #e5e5e5;
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: #e4e4e4;
+        }
+        .shape:first-child {
+          background: linear-gradient(#ffd768, #c2b417);
+        }
+        .shape:last-child {
+          background: linear-gradient(to right, #c8ff86, #023516);
+        }
+        form * {
+          color: #080710;
+        }
+        button {
+          background-color: #e4e4e4;
+          color: #444444;
+        }
+        form {
+          background-color: #ffffff;
+        }
+        input {
+          background-color: #e4e4e4;
+        }
+        ::placeholder {
+          color: #444444;
+        }
+      }
       .background {
         width: 430px;
         height: 520px;
@@ -34,19 +89,16 @@
         border-radius: 50%;
       }
       .shape:first-child {
-        background: linear-gradient(#1845ad, #23a2f6);
         left: -80px;
         top: -80px;
       }
       .shape:last-child {
-        background: linear-gradient(to right, #ff512f, #f09819);
         right: -30px;
         bottom: -80px;
       }
       form {
         height: 510px;
         width: 450px;
-        background-color: rgba(255, 255, 255, 0.13);
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
@@ -59,7 +111,6 @@
       }
       form * {
         font-family: 'Poppins', sans-serif;
-        color: #ffffff;
         letter-spacing: 0.5px;
         outline: none;
         border: none;
@@ -81,21 +132,15 @@
         display: block;
         height: 50px;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.07);
         border-radius: 3px;
         padding: 0 10px;
         margin-top: 8px;
         font-size: 14px;
         font-weight: 300;
       }
-      ::placeholder {
-        color: #e5e5e5;
-      }
       button {
         margin-top: 50px;
         width: 100%;
-        background-color: #ffffff;
-        color: #080710;
         padding: 15px 0;
         font-size: 18px;
         font-weight: 600;
@@ -105,7 +150,11 @@
     </style>
   </head>
   <body>
-    <img style="height: 50px; width: 100px" src="/logo.png" onclick="location.href='/'"/>
+    <img
+      style="height: 50px; width: 100px"
+      src="/logo.png"
+      onclick="location.href='/'"
+    />
     <div class="background">
       <div class="shape"></div>
       <div class="shape"></div>
